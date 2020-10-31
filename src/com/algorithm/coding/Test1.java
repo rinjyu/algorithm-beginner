@@ -6,7 +6,6 @@ public class Test1 {
 
     public static void main(String[] args) {
         // write your code here
-
         max3();
         max4();
         min3();
