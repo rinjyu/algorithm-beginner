@@ -23,7 +23,7 @@ public class Test26 {
         int index = subKmpMatch1(text, pattern);
         if(index > -1){
             int len = 0;
-            for(int i = 0; i < i; i++){
+            for(int i = 0; i < index; i++){
                 len = text.substring(i, i + 1).getBytes().length;
             }
             len += pattern.length();
@@ -87,7 +87,7 @@ public class Test26 {
         int index = subKmpMatch2(text, pattern);
         if(index > -1){
             int len = 0;
-            for(int i = 0; i < i; i++){
+            for(int i = 0; i < index; i++){
                 len = text.substring(i, i + 1).getBytes().length;
             }
             len += pattern.length();

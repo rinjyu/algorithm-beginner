@@ -25,7 +25,7 @@ public class Test25 {
         int index = subBfMatch1(text, pattern);
         if(index > -1){
             int len = 0;
-            for(int i = 0; i < i; i++){
+            for(int i = 0; i < index; i++){
                 len = text.substring(i, i + 1).getBytes().length;
             }
             len += pattern.length();
@@ -73,7 +73,7 @@ public class Test25 {
         int index = subBfMatch2(text, pattern);
         if(index > -1){
             int len = 0;
-            for(int i = 0; i < i; i++){
+            for(int i = 0; i < index; i++){
                 len = text.substring(i, i + 1).getBytes().length;
             }
             len += pattern.length();
