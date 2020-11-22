@@ -44,19 +44,21 @@ public class Test29 {
                 case SEARCH_NO :
                     temp.scanData("검색", Data.NO);
                     ptr = list.search(temp, Data.NO_ORDER);
-                    if (ptr == null)
+                    if(ptr == null){
                         System.out.println("그 번호의 데이터가 없습니다.");
-                    else
+                    }else{
                         System.out.println("검색 성공：" + ptr);
+                    }
                     break;
 
                 case SEARCH_NAME :
                     temp.scanData("검색", Data.NAME);
                     ptr = list.search(temp, Data.NAME_ORDER);
-                    if (ptr == null)
+                    if(ptr == null){
                         System.out.println("그 이름의 데이터가 없습니다.");
-                    else
+                    }else{
                         System.out.println("검색 성공：" + ptr);
+                    }
                     break;
 
                 case NEXT :
@@ -316,16 +318,16 @@ public class Test29 {
                     }else{
                         preNode = nextNode;
                     }
-                    if(count == 0){
-                        node = node.next;
-                    }else{
-                        Node<E> temp = node;
-                        remove(node);
-                        node = temp.next;
-                    }
                 }
-                selNode = head;
+                if(count == 0){
+                    node = node.next;
+                }else{
+                    Node<E> temp = node;
+                    remove(node);
+                    node = temp.next;
+                }
             }
+            selNode = head;
         }
 
         public E retrieve(int n){
@@ -488,16 +490,16 @@ public class Test29 {
                     }else{
                         preNode = nextNode;
                     }
-                    if(count == 0){
-                        node = node.next;
-                    }else{
-                        Node<E> temp = node;
-                        remove(node);
-                        node = temp.next;
-                    }
                 }
-                selNode = head;
+                if(count == 0){
+                    node = node.next;
+                }else{
+                    Node<E> temp = node;
+                    remove(node);
+                    node = temp.next;
+                }
             }
+            selNode = head;
         }
 
         public E retrieve(int n){
